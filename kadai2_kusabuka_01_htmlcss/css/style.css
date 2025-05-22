@@ -16,18 +16,19 @@
 
 }
 
-.wrap.box {
+.container.wrap .box {
     background-color: red;
 }
 
 .header {
     display: flex;
     max-width: 960px;
-    justify-content: space space-between;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     font-family: sans-serif;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 
@@ -48,6 +49,7 @@
 .nav li {
     padding: 0 15px;
     border-right: 1px solid black;
+    box-sizing: border-box;
 }
 
 .nav li:last-child {
@@ -80,7 +82,7 @@
     }
 
     .nav li {
-        padding: 5px 15px;
+        padding: 11px 0;
         border-right: none;
         border-bottom: 1px solid black;
         width: 100%;
