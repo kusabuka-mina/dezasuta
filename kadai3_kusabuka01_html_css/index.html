@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>第三回課題</title>
-    <link rel="stylesheet" href=".//css/reset.css">
-    <link rel="stylesheet" href=".//css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -14,20 +14,20 @@
         <h1>サービス</h1>
         <div class="card-wrapper">
             <div class="card">
-                <img src="main_1.jpg" alt="サービス１">
+                <img src="./images/main_1.jpg" alt="サービス１">
                 <h2>サービス１</h2>
-                <p>サービス１サービス１サービス１サービス１サービス１サービス１サービス１サービス１</p>
+                <p>サービス１サービス１サービス１サービス１サービス１サービス１</p>
 
             </div>
             <div class="card">
-                <img src="main_2.jpg" alt="サービス２">
+                <img src="./images/main_2.png" alt="サービス２">
                 <h2>サービス２</h2>
-                <p>サービス２サービス２サービス２サービス２サービスサービス２サービス２サービス２</p>
+                <p>サービス２サービス２サービス２サービス２サービスサービス２</p>
             </div>
             <div class="card">
-                <img src="main_3.jpg" alt="サービス３">
+                <img src="./images/main_3.png" alt="サービス３">
                 <h2>サービス３</h2>
-                <p>サービス３サービス３サービス３サービス３サービス３サービス３サービス３サービス３</p>
+                <p>サービス３サービス３サービス３サービス３サービス３サービス３</p>
 
             </div>
         </div>
@@ -36,18 +36,20 @@
 
 
 
-        <!-- <script>
-        let result = 0;
+        <script>
+            let result = 0;
 
-        for (let result = 1; result =< 10; result++)
+            for (let i = 1; i <= 10; i++) {
+                result = result + i;
+                console.log(result)
+            }
 
-            let result = 1;
-        if (result => 20) {
-            console.log("20以上");
-        } else if (result < 20) {
-            console.log("20未満")
-        }
-    </script> -->
+            if (result => 20) {
+                console.log("20以上");
+            } else if (result < 20) {
+                console.log("20未満")
+            }
+        </script>
 </body>
 
 </html>

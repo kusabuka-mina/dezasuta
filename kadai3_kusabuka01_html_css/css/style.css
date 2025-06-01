@@ -5,18 +5,18 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    max-width: 960px;
+
 }
 
 h1 {
     text-align: center;
-    color: lightblue;
+    color: #20b2aa;
     font-size: 24px;
     margin-bottom: 30px;
 }
 
 .container {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -32,24 +32,28 @@ h1 {
 .card {
     width: 29%;
     background-color: white;
-    padding: 10px;
     text-align: center;
 }
 
 .card h2 {
     text-align: left;
-    border-left: 6px solid lightblue;
+    border-left: 6px solid #20b2aa;
     padding-left: 10px;
-    margin: 10px 0;
+    margin: 10px;
     font-size: 18px;
-    color: lightblue;
+    color: #20b2aa;
+}
+
+.card p {
+    margin: 10px 10px;
+    text-align: left;
 }
 
 .card img {
     width: 100%;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:400px) {
     .card-wrapper {
         flex-direction: column;
     }
