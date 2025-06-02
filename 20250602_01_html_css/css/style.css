@@ -4,7 +4,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4%;
+    padding: 0 4%;
     margin: 0 auto;
 }
 
@@ -16,20 +16,27 @@ nav ul {
 }
 
 h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
     background-color: #000;
     color: #fff;
     padding: 10px 20px;
     border-radius: 4px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 
 /* mainvisual */
-#mainvisual {
-
+.mainvisual {
     margin-bottom: 80px;
 }
 
-#mainvisual img {
+.mainvisual img {
     width: 100%;
     max-width: 1920px;
     height: 600px;
@@ -38,13 +45,25 @@ h1 {
 }
 
 /* about */
+#about {
+    text-align: center;
+    color: #383e45;
+    font: 14.4px "Noto Sans JP";
+    margin: 0 1.2px 100px;
+    padding: 0 38.4875px;
+
+
+}
 
 #about h2 {
     text-align: center;
-    font-size: 24px;
-    margin-bottom: 24px;
-    margin-top: 80px;
-    border-bottom: 3px solid #9acd32;
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    border-bottom: 2px solid #9acd32;
+    display: inline-block;
+    padding-bottom: 8px;
+
 
 }
 
@@ -62,27 +81,41 @@ h1 {
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: 30px;
+    margin-right: 0 30px 0 0;
 }
 
 .profile-text {
 
     text-align: left;
+    font-size: 14.4px;
+    max-width: 300px;
+    line-height: 1.6;
 
 }
 
 .profile-text h3 {
-    margin: 0 0 8px;
-    font-size: 18px;
+    margin: 10px 0;
+    font-size: 16px;
 }
 
 /* bicycles */
+
+#bicycle-list {
+    text-align: center;
+    color: #383E45;
+    font: "Noto Sans JP";
+    margin: 0 1.2px 100px;
+    padding: 0 38.4875px;
+}
+
 #bicycle-list h2 {
     text-align: center;
-    font-size: 24px;
-    margin-bottom: 24px;
-    margin-top: 80px;
-    border-bottom: 3px solid #9acd32;
+    font-size: 32px;
+    /* margin: 0 0 60px; */
+    margin-bottom: 60px;
+    /* margin-top: 80px; */
+    border-bottom: 2px solid #9acd32;
+    display: inline;
 }
 
 #bicycle-list ul {
@@ -90,7 +123,7 @@ h1 {
     gap: 20px;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
+    margin: 40px auto;
 }
 
 #bicycle-list li {
@@ -100,6 +133,7 @@ h1 {
 
 #bicycle-list h3 {
     font-size: 16px;
+    margin: 10px 0;
 
 }
 
@@ -108,6 +142,9 @@ footer {
     padding: 10px o;
     text-align: center;
     margin-top: 80px;
+    color: #383E45;
+    font: 8px "Noto Sans JP";
+    padding: 10px o;
 }
 
 @media screen and (max-width:400px) {
