@@ -5,7 +5,10 @@
 /*利用するタグによってこちらの内容は増やす*/
 
 html,
-body,
+body {
+    font-feature-settings: "palt";
+}
+
 h1,
 h2,
 h3,
