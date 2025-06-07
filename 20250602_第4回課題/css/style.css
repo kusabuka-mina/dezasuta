@@ -50,33 +50,41 @@ body {
 
 .top-messege {
     width: 1000px;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
+
+.top-massege p {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
 
 .catch-sub {
     font-size: 30px;
-    margin: 104px auto 47.7px;
+    margin-top: 104px;
 }
 
 .catch-main1 {
     font-size: 82px;
     line-height: 1.17;
     letter-spacing: 0.1;
-    margin: 0 auto 22px;
+    margin-top: 48px;
 }
 
 .catch-main2 {
     font-size: 23px;
     line-height: 1.65;
     letter-spacing: 0.1;
-    margin: 0 auto;
+    margin-top: 22px;
+    width: 879px;
 }
 
 /* About us */
 
 .about {
     max-width: 1000px;
+    margin: 0 auto;
 }
 
 .about-container {
@@ -84,7 +92,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 80px;
-    margin: 0 auto;
+    margin: 94px auto;
 }
 
 .about-image {
@@ -98,32 +106,37 @@ body {
 
 .about-text h2 {
     width: 272px;
-    height: 77px;
+    /* height: 77px; */
     margin-bottom: 47.96px;
 }
 
 .about-lead {
     font-size: 44px;
-    margin-bottom: 23.98px;
+    margin-top: 49px;
     line-height: 1.45;
+    width: 371px;
 }
 
 .about-description {
     font-size: 16px;
     line-height: 1.625;
+    width: 410px;
+    margin-top: 24px;
 
 }
 
 /* MENU */
 .menu {
     text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .menu h2 {
     width: 151.38px;
-    height: 78.3px;
+    /* height: 78.3px; */
     margin-top: 96px;
-    margin: 0 auto;
+    margin: 96px auto;
 }
 
 .menu-container {
@@ -132,7 +145,7 @@ body {
     align-items: center;
     gap: 46px;
     max-width: 1000px;
-    margin-top: 39.1803px auto;
+    margin-top: 39px auto;
 
 
 }
@@ -144,8 +157,6 @@ body {
 
 .menu-img-wrapper img {
     width: 328.6px;
-    height: 219px;
-    object-fit: cover;
     border-radius: 0 41.64px 0 0px;
     display: block;
 }
@@ -153,45 +164,49 @@ body {
 .menu-img-wrapper h3 {
     position: absolute;
     font-size: 38px;
-    line-height: 0.5789;
     margin-bottom: 11.1148px;
     color: #d30202;
+    top: 90%;
 }
 
 .menu-item p {
     font-size: 17px;
     line-height: 1.47;
     text-align: left;
+    width: 300px;
+    margin-top: 10px;
 }
 
 /* gallery */
 .gallery h2 {
     width: 245px;
-    height: 78px;
+    /* height: 78px; */
     margin-top: 38px;
-    margin: 0 auto;
+    margin: 38px auto;
 
 }
 
 .gallery-container {
     display: flex;
-    justify-content: center;
     gap: 0;
-    max-width: 1000px;
+    margin-top: 15px;
 }
 
 .gallery-container {
-    width: 465.8px;
-    height: 319px;
+    width: 20%;
     object-fit: cover;
 }
 
 /* event */
+.event {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .event h2 {
     width: 173px;
-    height: 78.3px;
-    margin-top: 58.9px;
-    margin: 0 auto;
+    /* height: 78.3px; */
+    margin: 59px auto;
 }
 
 .event-list {
@@ -201,6 +216,7 @@ body {
     padding: 38.9px;
     background-color: #ffffff;
 }
+
 
 .event-item {
     display: flex;
@@ -224,36 +240,47 @@ body {
 /* access */
 .access h2 {
     width: 213.8px;
-    height: 78.3px;
-    margin: 0 auto;
+    /* height: 78.3px; */
+    margin: 68px auto;
 }
 
 .map-container {
-    width: 100%;
-    max-width: 1000px;
-    margin-top: 37.4px;
+    width: 1920px;
+    margin-top: 37px;
 
 }
+
+iframe {
+    height: 471px;
+    display: block;
+}
+
+
+/* footer */
 
 /* shop name */
 .shop-info {
-    margin-top: 73px;
+    margin-top: 76px;
     display: flex;
     justify-content: center;
+    gap: 64px;
 }
 
-.shop-name {
+.shop-info h2 img {
     width: 226.76px;
-    height: 50px;
-    color: #4f260b;
-    margin: 0 auto;
 }
 
-/* footer */
-footer {
+.footer-text {
+    font-size: 20px;
+    line-height: 1.95;
+
+}
+
+.small {
     font-size: 16px;
     line-height: 2.28;
     margin: 73px auto;
+    text-align: center;
 }
 
 /* btn */
