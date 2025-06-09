@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-color: lightgray;
+    background-color: #E8D98F;
 }
 
 /* 一番上のトップ */
@@ -46,14 +46,14 @@ body {
     font-weight: bold;
 }
 
-/* ハッピー */
+/* top-massege */
 
-.top-messege {
+/* .top-massege {
     width: 1000px;
     text-align: center;
-}
+} */
 
-.top-massege p {
+p {
     text-align: center;
     margin: 0 auto;
 }
@@ -68,14 +68,14 @@ body {
 .catch-main1 {
     font-size: 82px;
     line-height: 1.17;
-    letter-spacing: 0.1;
+    letter-spacing: 0.1em;
     margin-top: 48px;
 }
 
 .catch-main2 {
     font-size: 23px;
     line-height: 1.65;
-    letter-spacing: 0.1;
+    letter-spacing: 0.1em;
     margin-top: 22px;
     width: 879px;
 }
@@ -114,7 +114,8 @@ body {
     font-size: 44px;
     margin-top: 49px;
     line-height: 1.45;
-    width: 371px;
+    /* width: 371px; */
+    text-align: left;
 }
 
 .about-description {
@@ -122,6 +123,7 @@ body {
     line-height: 1.625;
     width: 410px;
     margin-top: 24px;
+    text-align: left;
 
 }
 
@@ -156,7 +158,7 @@ body {
 }
 
 .menu-img-wrapper img {
-    width: 328.6px;
+    /* width: 328.6px; */
     border-radius: 0 41.64px 0 0px;
     display: block;
 }
@@ -166,15 +168,15 @@ body {
     font-size: 38px;
     margin-bottom: 11.1148px;
     color: #d30202;
-    top: 90%;
+    top: 95%;
 }
 
 .menu-item p {
     font-size: 17px;
     line-height: 1.47;
     text-align: left;
-    width: 300px;
-    margin-top: 10px;
+    /* width: 300px; */
+    margin-top: 44px;
 }
 
 /* gallery */
@@ -192,7 +194,7 @@ body {
     margin-top: 15px;
 }
 
-.gallery-container {
+.gallery-container img {
     width: 20%;
     object-fit: cover;
 }
@@ -217,6 +219,10 @@ body {
     background-color: #ffffff;
 }
 
+.box {
+    width: fit-content;
+    margin: 0 auto;
+}
 
 .event-item {
     display: flex;
@@ -245,13 +251,13 @@ body {
 }
 
 .map-container {
-    width: 1920px;
     margin-top: 37px;
 
 }
 
 iframe {
     height: 471px;
+    width: 100%;
     display: block;
 }
 
@@ -259,6 +265,10 @@ iframe {
 /* footer */
 
 /* shop name */
+footer {
+    background-color: #FFFFFF;
+}
+
 .shop-info {
     margin-top: 76px;
     display: flex;
@@ -270,9 +280,10 @@ iframe {
     width: 226.76px;
 }
 
-.footer-text {
+.footer-text p {
     font-size: 20px;
     line-height: 1.95;
+    text-align: left;
 
 }
 
