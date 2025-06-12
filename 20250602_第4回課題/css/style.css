@@ -52,9 +52,8 @@ body {
     padding-bottom: 93px;
 }
 
-p {
+.top-massege p {
     text-align: center;
-    margin: 0 auto;
 }
 
 
@@ -82,13 +81,14 @@ p {
 .about {
     max-width: 1000px;
     margin: 0 auto;
+    padding-right: 10px
 }
 
 .about-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    justify-content: space-between;
 }
 
 .about-image {
@@ -125,8 +125,7 @@ p {
     text-align: center;
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 95px;
-    padding-bottom: 82px;
+    padding: 95px 10px 82px 10px;
 }
 
 .menu h2 {
@@ -193,8 +192,7 @@ p {
 .event {
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 60px;
-    padding-bottom: 70px;
+    padding: 60px 10px 70px 10px;
 }
 
 .event h2 {
@@ -257,8 +255,7 @@ iframe {
 /* shop name */
 footer {
     background-color: #FFFFFF;
-    padding-top: 76px;
-    padding-bottom: 75px;
+    padding: 76px 10px 75px 10px;
     font-color: #000000;
 }
 
@@ -279,8 +276,6 @@ footer {
     font-size: 20px;
     line-height: 1.95;
     text-align: left;
-
-
 }
 
 .small {
