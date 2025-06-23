@@ -7,20 +7,43 @@
     <title>DESIGN CAFE</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
     <header id="top">
         <div class="header_slider">
             <div>
-                <img src="./images/pc_first-100.jpg" alt="店内の様子">
+                <picture>
+                    <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
+                    <img src="./images/pc_first-100.jpg" alt="店内の様子">
+                </picture>
             </div>
         </div>
         <div class="header_wrap">
             <h1 class="header_logo">
-                <img src="./images/design_cafe_logo_header@2x.png" alt="DESIGN CAFE">
+                <picture>
+                    <source srcset="./images/design_cafe_logo_header@2x.png">
+                    <img src="./images/design_cafe_logo_header@2x.png" alt="DESIGN CAFE">
+                </picture>
             </h1>
             <nav class="pc_nav">
+                <ul>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
+
+                </ul>
+            </nav>
+            <div class="sp_btn">
+                <span></span>
+            </div>
+
+
+
+            <nav class="sp_nav">
                 <ul>
                     <li><a href="#about">ABOUT US</a></li>
                     <li><a href="#menu">MENU</a></li>
@@ -41,10 +64,18 @@
 
     <section class="about" id="about">
         <div class="about-container">
-            <img src="./images/pc_about-100.jpg" alt="コーヒー写真" class="about-image">
+            <picture>
+                <source srcset="./images/about_us@2x-100.jpg" media="(max-width:767px)">
+                <img src="./images/pc_about-100.jpg" alt="コーヒー写真" class="about-image">
+            </picture>
             <div class="about-text">
                 <h2>
-                    <img src="./images/about_us@2x.png" alt="about US">
+                    <picture>
+                        <source srcset="./images/about_us@2x.png" media="(max-width:767px)">
+                        <img src="./images/about_us@2x.png" alt="about US">
+
+
+                    </picture>
                 </h2>
                 <p class="about-lead">私たちが提供する<br>こだわりのコーヒー</p>
                 <p class="about-description">
@@ -63,7 +94,10 @@
         <div class="menu-container">
             <div class="menu-item">
                 <div class="menu-img-wrapper">
-                    <img src="./images/pc_menu_drink-100.jpg" alt="Drink">
+                    <picture>
+                        <source srcset="./images/drink_sp@2x-100.jpg" media="(max-width:767px)">
+                        <img src="./images/pc_menu_drink-100.jpg" alt="Drink">
+                    </picture>
                     <h3>Drink</h3>
                 </div>
                 <p>ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
@@ -71,7 +105,10 @@
 
             <div class="menu-item">
                 <div class="menu-img-wrapper">
-                    <img src="./images/pc_menu_food-100.jpg" alt="Food">
+                    <picture>
+                        <source srcset="./images/food_sp@2x-100.jpg" media="(max-width:767px)">
+                        <img src="./images/pc_menu_food-100.jpg" alt="Food">
+                    </picture>
                     <h3>Food</h3>
                 </div>
                 <p>フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
@@ -79,7 +116,10 @@
 
             <div class="menu-item">
                 <div class="menu-img-wrapper">
-                    <img src="./images/pc_menu_sweets-100.jpg" alt="Sweets">
+                    <picture>
+                        <source srcser="./images/cake_sp@2x-100.jpg" media="(max-width:767px)">
+                        <img src="./images/pc_menu_sweets-100.jpg" alt="Sweets">
+                    </picture>
                     <h3>Sweets</h3>
                 </div>
                 <p>スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
@@ -175,7 +215,15 @@
 
 
 
-
+    <script>
+        $(function () {
+            $(".sp_btn").on("click", function () {
+                $(".sp_btn").toggleClass("open");
+                $(".sp_nav").fadeToggle();
+            })
+            //ここの中に記述
+        });
+    </script>
 </body>
 
 </html>
