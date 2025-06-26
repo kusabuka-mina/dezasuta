@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DESIGN CAFE</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -19,6 +23,15 @@
                     <img src="./images/pc_first-100.jpg" alt="店内の様子">
                 </picture>
             </div>
+
+            <div>
+                <picture>
+                    <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
+                    <img src="./images/slider_2.jpg" alt="店内の様子">
+                </picture>
+            </div>
+
+
         </div>
         <div class="header_wrap">
             <h1 class="header_logo">
@@ -59,7 +72,8 @@
     <div class="top-massege">
         <p class="catch-sub">Have a happy day From a cup of coffee.</p>
         <p class="catch-main1">ハッピーに溢れる1日を<br>1杯のコーヒーから。</p>
-        <p class="catch-main2">毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
+        <p class="catch-main2">毎日を丁寧に大切に過ごしたい。<br class="br-sp">だからこそ一杯一杯丁寧にコーヒーを入れ<br>足を運んでくれるお客さんには落ち着く空間と<br
+                class="br-sp">こだわりのコーヒーを提供したい。</p>
     </div>
 
     <section class="about" id="about">
@@ -222,6 +236,13 @@
                 $(".sp_nav").fadeToggle();
             })
             //ここの中に記述
+
+            $(".header_slider").slick({
+                // autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: false,
+            });
         });
     </script>
 </body>
