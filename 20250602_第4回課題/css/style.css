@@ -200,12 +200,16 @@ body {
 }
 
 .about-image {
-    width: 50%;
     border-radius: 0 0 82.373px 0;
 }
 
+.about-container picture {
+    width: 100%;
+}
+
 .about-text {
-    width: 41%
+    width: 41%;
+    padding-right: 10px;
 }
 
 .about-text h2 {
@@ -311,7 +315,7 @@ body {
 
 .event-list {
     max-width: 1000px;
-    border: 1px solid;
+    border: 3px solid;
     padding: 38.9px;
     background-color: #ffffff;
 }
@@ -409,6 +413,23 @@ footer {
     height: 125px;
 }
 
+@media screen and (max-width:1100px) {
+    .catch-main1 {
+        font-size: 70px;
+    }
+
+    .catch-main2 {
+        font-size: 19px;
+    }
+
+    .about-lead {
+        font-size: 33px;
+    }
+}
+
+
+
+
 /* レスポンシブ対応 */
 @media screen and (max-width:767px) {
     body {
@@ -428,6 +449,7 @@ footer {
     /* top-massege */
     .top-massege {
         text-align: center;
+        padding: 0;
     }
 
     .catch-sub {
@@ -470,7 +492,7 @@ footer {
 
     /* about */
     .about {
-        padding-top: 53px;
+        padding-top: 55px;
     }
 
     .about-container {
@@ -481,10 +503,10 @@ footer {
 
     .about-text h2 {
         order: -1;
+        width: 160px;
     }
 
     .about-container img {
-        /* order: 2; */
         width: 100%;
         height: auto;
         border-bottom-right-radius: 0;
@@ -501,7 +523,11 @@ footer {
     .about-lead {
         font-size: 36px;
         line-height: 1.25;
-        margin: 35px 67px 19px 20px;
+        margin: 35px 0 19px 20px;
+        width: 100%;
+
+
+
     }
 
     .about-description {
@@ -525,12 +551,18 @@ footer {
         padding-top: 46px;
     }
 
+    .menu h2 img {
+        width: 87px;
+    }
+
     .menu-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0 38px 0 37px;
     }
+
+
 
     .menu-item {
         width: 100%;
@@ -553,6 +585,11 @@ footer {
         padding-top: 80px;
     }
 
+    .gallery h2 img {
+        width: 142px;
+        text-align: center;
+    }
+
     .gallery-container img {
         display: none;
         margin-top: 15px;
@@ -570,13 +607,19 @@ footer {
 
     /* event */
     .event {
-        padding-top: 28px;
+        padding-top: 27px;
+        padding-bottom: 0;
+    }
+
+    .event h2 {
+        padding-bottom: 15px;
+        width: 100px;
     }
 
     .event-item {
-        display: flex;
         align-items: flex-start;
-        /* gap: 26px; */
+        flex-direction: column;
+
     }
 
     .event-date,
@@ -590,6 +633,7 @@ footer {
         white-space: nowrap;
         flex-shrink: 0;
         width: 100px;
+        line-height: 1;
 
     }
 
@@ -598,6 +642,13 @@ footer {
         text-overflow: ellipsis;
         white-space: nowrap;
         flex: 1;
+        margin: 0;
+        line-height: 1.2;
+        margin-bottom: 24px;
+    }
+
+    .event-text:nth-of-type(3) {
+        margin-bottom: 18px;
     }
 
     .box {
@@ -609,17 +660,48 @@ footer {
         padding-top: 26px;
     }
 
+    .access h2 img {
+        width: 124px;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+
+
     .map-container iframe {
+        margin-top: 5px;
         height: 191px;
         border: none;
     }
 
     /* footer */
+    footer {
+        padding: 0 10px 0 10px;
+    }
 
 
     .shop-info {
         display: flex;
         flex-direction: column;
+        padding-top: 41px;
+    }
+
+    .shop-name img {
+        width: 50px;
+    }
+
+    .footer-text {
+        margin-top: 28px;
+    }
+
+    .footer-text p {
+        font-size: 18px;
+    }
+
+    .small {
+        font-size: 16px;
+        margin-top: 40px;
+        margin-bottom: 27px;
     }
 
 
@@ -643,14 +725,31 @@ footer {
 }
 
 /* 質問事項
-・line-heightを指定するときはいつでしょうか？指定するタイミングがわかりません。
-・レスポンシブは何の端末で見ればいいでしょうか？（アイパッド、スマホ・・・）
-・event部分が日付とテキストをうまく並べられませんでした。
-・余白がPC版と違うときにどう設定したらいいかわかりませんでした。
-→デベロッパーツールで確認はできるようになったのですが、どのような操作を加えればいいかわかりません。
-（pc版で50px、spは３０pxにしたいときはどう設定した良いでしょうか）
+・「私たちが提供するこだわりのコーヒー」が、ブレークポイントを
+つけられましたが、PC版がうまくいかない原因がわかりませんでした。
 
-先生の添削のおかげで一気に完成に近づきました！
-先生本当にすごくて、いつも安心です！
-細かいところがあまり得意な性格ではないので今回丁寧にやってコツをつかみたいです。
-よろしくお願いいたします！ */
+・アバウトの左の余白がそろわない原因がわかりませんでした。
+20px marginということはわかるのですが、なぜそろわないのか悩んでいます。
+
+・見出しのタグの調整がわかりませんでした。
+少し小さすぎるように思うのですが、heightとwidthどのようにつければよいか教えていただきたいです。
+
+・about　usのタグの下の余白がなにかがついているのはわかるのですが、
+なにがついているのかわかりませんでした。
+
+・ギャラリーのタグが真ん中にいかないのがどうしたらいいでしょうか。
+余白がないのでmarginとるわけでもないし、align itemsでやってもうまくいきませんでした。
+
+・eventの箱の中の余白がとれず苦戦しました。
+
+・アクセスのタグ下についているpaddingを消したいのですが、
+どうしたらよいかわかりませんでした。
+
+・フッターの余白が、デベロッパーツールでみてもわかりませんでした。
+
+明日、明後日で6回課題まで仕上げて、
+5，6日で修正して、7日までに完成するつもりです！
+少しみなさんとは遅れてしまっているのはわかっていますが、
+1個1個丁寧にやっていきたいと思います。
+
+添削よろしくお願いいたします！ */
