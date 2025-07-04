@@ -204,7 +204,7 @@ body {
 }
 
 .about-container picture {
-    width: 100%;
+    width: 50%;
 }
 
 .about-text {
@@ -293,6 +293,7 @@ body {
     display: flex;
     gap: 0;
     margin-top: 15px;
+    position: relative;
 }
 
 .gallery-container img {
@@ -485,6 +486,11 @@ footer {
         height: 100px; */
     }
 
+    .page-top-btn img {
+        width: 100px;
+        height: 100px;
+    }
+
     .header_logo img {
         height: 41px;
         width: auto;
@@ -504,10 +510,14 @@ footer {
     .about-text h2 {
         order: -1;
         width: 160px;
+        margin-bottom: 0;
+    }
+
+    .about-container picture {
+        width: 100%;
     }
 
     .about-container img {
-        width: 100%;
         height: auto;
         border-bottom-right-radius: 0;
         margin-top: 12px;
@@ -521,13 +531,12 @@ footer {
     }
 
     .about-lead {
-        font-size: 36px;
+        font-size: 37px;
         line-height: 1.25;
-        margin: 35px 0 19px 20px;
+        margin: 35px 0 19px 0;
         width: 100%;
-
-
-
+        padding: 0 20px;
+        box-sizing: border-box;
     }
 
     .about-description {
@@ -579,13 +588,14 @@ footer {
         font-size: 17px;
     }
 
-
-    /* gallery */
-    .gallery {
-        padding-top: 80px;
+    .menu-item:nth-of-type(3) p {
+        margin-bottom: 0;
     }
 
-    .gallery h2 img {
+
+    /* gallery */
+
+    .gallery h2 {
         width: 142px;
         text-align: center;
     }
@@ -647,9 +657,11 @@ footer {
         margin-bottom: 24px;
     }
 
-    .event-text:nth-of-type(3) {
-        margin-bottom: 18px;
+    .event-item:last-of-type .event-text {
+        margin-bottom: 0;
     }
+
+
 
     .box {
         width: 100%;
@@ -660,7 +672,7 @@ footer {
         padding-top: 26px;
     }
 
-    .access h2 img {
+    .access h2 {
         width: 124px;
         text-align: center;
         padding-bottom: 0;
@@ -676,23 +688,23 @@ footer {
 
     /* footer */
     footer {
-        padding: 0 10px 0 10px;
+        padding: 42px 10px 27px 20px;
     }
 
 
     .shop-info {
         display: flex;
         flex-direction: column;
-        padding-top: 41px;
+        gap: 27px;
     }
 
     .shop-name img {
         width: 50px;
     }
 
-    .footer-text {
+    /* .footer-text {
         margin-top: 28px;
-    }
+    } */
 
     .footer-text p {
         font-size: 18px;
@@ -701,7 +713,14 @@ footer {
     .small {
         font-size: 16px;
         margin-top: 40px;
-        margin-bottom: 27px;
+        padding-top: 0;
+    }
+
+    .arrow-prev::before,
+    .arrow-next::before {
+        width: 10px;
+        height: 10px;
+        border-width: 2px;
     }
 
 
@@ -724,32 +743,45 @@ footer {
     margin-bottom: 0;
 }
 
-/* 質問事項
-・「私たちが提供するこだわりのコーヒー」が、ブレークポイントを
-つけられましたが、PC版がうまくいかない原因がわかりませんでした。
+.arrow {
+    background: none;
+    border: none;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
 
-・アバウトの左の余白がそろわない原因がわかりませんでした。
-20px marginということはわかるのですが、なぜそろわないのか悩んでいます。
+/* 左矢印 */
+.arrow-prev::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-left: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    transform: rotate(45deg);
+}
 
-・見出しのタグの調整がわかりませんでした。
-少し小さすぎるように思うのですが、heightとwidthどのようにつければよいか教えていただきたいです。
+/* 右矢印 */
+.arrow-next::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-right: 5px solid #fff;
+    border-top: 5px solid #fff;
+    transform: rotate(45deg);
+}
 
-・about　usのタグの下の余白がなにかがついているのはわかるのですが、
-なにがついているのかわかりませんでした。
+/* 位置調整 */
+.arrow-prev {
+    left: 80px;
+}
 
-・ギャラリーのタグが真ん中にいかないのがどうしたらいいでしょうか。
-余白がないのでmarginとるわけでもないし、align itemsでやってもうまくいきませんでした。
-
-・eventの箱の中の余白がとれず苦戦しました。
-
-・アクセスのタグ下についているpaddingを消したいのですが、
-どうしたらよいかわかりませんでした。
-
-・フッターの余白が、デベロッパーツールでみてもわかりませんでした。
-
-明日、明後日で6回課題まで仕上げて、
-5，6日で修正して、7日までに完成するつもりです！
-少しみなさんとは遅れてしまっているのはわかっていますが、
-1個1個丁寧にやっていきたいと思います。
-
-添削よろしくお願いいたします！ */
+.arrow-next {
+    right: 80px;
+}

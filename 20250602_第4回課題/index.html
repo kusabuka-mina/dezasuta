@@ -84,12 +84,7 @@
             </picture>
             <div class="about-text">
                 <h2>
-                    <picture>
-                        <source srcset="./images/about_us@2x.png" media="(max-width:767px)">
-                        <img src="./images/about_us@2x.png" alt="about US">
-
-
-                    </picture>
+                    <img src="./images/about_us@2x.png" alt="about US">
                 </h2>
                 <p class="about-lead">私たちが提供する<br>こだわりのコーヒー</p>
                 <p class="about-description">
@@ -152,6 +147,7 @@
             <img src="./images/pc_gallary_03-100.jpg" alt="カフェ２">
             <img src="./images/pc_gallary_04-100.jpg" alt="カフェ３">
             <img src="./images/pc_gallary_05-100.jpg" alt="コーヒー">
+            <img src="./images/pc_gallary_01-100.jpg" alt="カフェ１">
         </div>
     </section>
 
@@ -243,6 +239,27 @@
                 dots: true,
                 arrows: false,
             });
+
+            $(".gallery-container").slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                arrows: true,
+                dots: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                prevArrow: '<button class="arrow arrow-prev"></button>',
+                nextArrow: '<button class="arrow arrow-next"></button>',
+
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+
+            })
         });
     </script>
 </body>
