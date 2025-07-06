@@ -723,6 +723,14 @@ footer {
         border-width: 2px;
     }
 
+    .arrow-prev {
+        left: 4.27%;
+    }
+
+    .arrow-next {
+        right: 4.27%;
+    }
+
 
 
 
@@ -779,9 +787,9 @@ footer {
 
 /* 位置調整 */
 .arrow-prev {
-    left: 80px;
+    left: 20%;
 }
 
 .arrow-next {
-    right: 80px;
+    right: 20%;
 }
